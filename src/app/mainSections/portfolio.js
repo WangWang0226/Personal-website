@@ -4,12 +4,12 @@ import PortfolioItem from '../components/PortfolioItem';
 import { TEXTS } from '../constants/texts';
 
 export default function Portfolio() {
+
   return (
-    
     <div id="portfolio" className="flex flex-col max-w-4xl mx-auto p-16">
-      <h1 className='flex justify-center pt-8 text-secondary font-bold text-xl'>{TEXTS.PORTFOLIO}</h1>
-      <h1 className='flex justify-center p-8 text-black font-bold text-3xl'>{TEXTS.MY_RECENT_WORK}</h1>
-      <div className="portfolio-container">
+      <h1 className='flex justify-center pt-8 text-secondary font-bold text-xl' data-aos="fade-up">{TEXTS.PORTFOLIO}</h1>
+      <h1 className='flex justify-center p-8 text-black font-bold text-3xl' data-aos="fade-up">{TEXTS.MY_RECENT_WORK}</h1>
+      <div className="portfolio-container" >
 
         <PortfolioItem
           bgUrl="/images/reddit_sentiment_analysis.jpg"

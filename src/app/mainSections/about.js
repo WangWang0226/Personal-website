@@ -42,11 +42,11 @@ export default function About() {
 
   return (
     <div id="about" className="flex flex-row max-w-6xl h-screen mx-auto">
-      <div className="justify-center flex flex-1 pt-24">
+      <div className="justify-center flex flex-1 pt-24" data-aos="fade-up">
         <div className="bg-profile01 rounded-3xl w-3/4 bg-center bg-cover"/>
       </div>
 
-      <div className="flex flex-col flex-1 p-8 pt-32">
+      <div className="flex flex-col flex-1 p-8 pt-32" data-aos="fade-left">
         <ul className="tabContainer">
           <li>
             <a

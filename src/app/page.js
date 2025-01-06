@@ -1,8 +1,9 @@
-import Home from './components/home';
-import Navbar from './components/navbar';
-import Skills from './components/skills';
-import Portfolio from './components/portfolio';
-import About from './components/about';
+import Home from './mainSections/home';
+import Navbar from './mainSections/navbar';
+import Portfolio from './mainSections/portfolio';
+import About from './mainSections/about';
+import TransitionBanner from './mainSections/transitionBanner';
+import Services from './mainSections/services';
 
 export default function Page() {
   return (
@@ -11,7 +12,8 @@ export default function Page() {
       <Home/>
       <About/>
       <Portfolio/>
-      <Skills/>
+      <TransitionBanner/>
+      <Services/>
     </div>
   );
 }

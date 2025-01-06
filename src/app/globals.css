@@ -5,11 +5,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #fbbf24;
+  --secondary: #3965a2;
+  --lightBlue: #629ae9;
+  --lightOrange: #e6a754;
+  --lightGreen: #59e069;
+  --lightRed: #ec4f4f;
+  --lightYellow: #f3e441;
+  --lightPink: #e49adc;
+  --lightPurple: #dd6be0;
+  --lightBrown: #e69c52;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -108,6 +118,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 
 .container {
   display: grid;
@@ -212,7 +223,7 @@ p {
 }
 
 .button-primary {
-  background-color: #fbbf24; /* bg-yellow-500 */
+  background-color: var(--primary); /* bg-yellow-500 */
   color: black; /* text-black */
   padding: 0.75rem 1.5rem; /* px-6 py-3 */
   border-radius: 0.75rem; /* rounded-xl */
@@ -224,15 +235,15 @@ p {
 }
 
 .button-second-primary {
-  background-color: #3965a2; /* bg-yellow-500 */
+  background-color: var(--secondary); 
   color: white; /* text-white */
   padding: 0.75rem 1.5rem; /* px-6 py-3 */
   border-radius: 0.75rem; /* rounded-xl */
   transition: background-color 0.3s; /* 添加过渡效果 */
 }
 
-.button-primary:hover {
-  background-color: #eab308; /* hover:bg-yellow-600 */
+.button-second-primary:hover {
+  background-color: #437ac6; /* hover:bg-yellow-600 */
 }
 
 
@@ -338,10 +349,157 @@ p {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
 }
 
 .nav-links a {
   color: white; /* 链接颜色 */
   text-decoration: none;
+  
+}
+
+.navbarContainer {
+  display: flex; /* 使用 Flexbox */
+  justify-content: flex-end; /* 将子元素推到右侧 */
+  margin-right: 10rem;
+  flex: 1;  
+  min-height: 72px; 
+}
+
+.navbarItem {
+  min-width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabContainer {
+  display: flex; /* 使用 inline-flex */
+  gap: 1rem; /* 标签之间的间距 */
+  padding: 0.5rem;
+  padding-left: 0;
+}
+
+.tab-links a {
+  color: black; /* 链接颜色 */
+  text-decoration: none;
+}
+
+.tab-content, .skill-content {
+  display: none; /* 默认隐藏所有内容 */
+}
+
+.tab-content.active {
+  display: block; 
+}
+
+.skill-content.active {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tab {
+  background-color: lightgray; 
+  color: black
+  
+}
+.tab-clicked {
+  background-color: #3965a2; 
+  color: white; /* 活动状态的文字颜色 */
+}
+
+.tab, .tab-clicked {
+  padding: 10px; /* 增加内边距 */
+  border-radius: 5px; /* 可选：添加圆角 */
+  transition: background-color 0.3s; /* 添加过渡效果 */
+  text-transform: uppercase;
+}
+
+.portfolio-style {
+  background-color: white;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap; /* 確保可以換行 */
+  width: 100%; /* 父容器使用全部可用空間 */
+  box-sizing: border-box;
+}
+
+.portfolio-item {
+  position: relative;
+  display: flex;
+  flex: 0 0 calc(50% - 8px); /* 每個項目佔 50%，扣除 gap 的一半 */
+  max-width: calc(50% - 8px); /* 確保最大寬度也相同 */
+  box-sizing: border-box; /* 包含內邊距和邊框 */
+}
+
+.portfolio-img {
+  position: relative; /* 使容器能夠使用絕對定位 */
+  width: 100%; /* 寬度為 100% */
+  padding-top: 80%; /* 這樣可以保持 1:1 的比例 */
+  background-size: cover; /* 確保背景圖片覆蓋整個容器 */
+  background-position: center; /* 背景圖片居中 */
+}
+
+.portfolio-overlay {
+  position: absolute; /* 絕對定位 */
+  top: 0; /* 從上方開始 */
+  left: 0; /* 從左側開始 */
+  right: 0; /* 右側延伸到容器邊緣 */
+  bottom: 0; /* 底部延伸到容器邊緣 */
+  background-color: #3965a2;
+  opacity: 0; 
+  transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 0.9; /* 懸停時改變透明度 */
+}
+
+.portfolio-text-container {
+  position: absolute; /* 絕對定位 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  top: 0; /* 從上方開始 */
+  left: 0; /* 從左側開始 */
+  right: 0; /* 右側延伸到容器邊緣 */
+  bottom: 0; /* 底部延伸到容器邊緣 */
+  opacity: 0; 
+  transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-text-container {
+  opacity: 1; /* 懸停時改變透明度 */
+}
+
+.portfolio-text-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.portfolio-text-content {
+  color: white;
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif; /* Fallback to sans-serif if Arial is not available */
+}
+
+.parallax-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed; /* 固定背景圖片 */
+  background-size: cover; /* 確保整張圖片完全顯示在容器內 */
+  background-position: center center ; /* 圖片從頂部置中開始 */
+  background-repeat: no-repeat; /* 禁止重複 */
+  background-clip: content-box; /* 背景圖片只顯示在內容區域內 */
+  overflow: hidden; /* 防止溢出父容器 */
+  height: 30vh;
 }

@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,8 +10,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#fbbf24',
+        secondary: '#3965a2'
+      },
       backgroundImage: {
-        'bg_photo': "url('/images/engineer_on_the_cloud.jpg')"
+        'profile00': "url('/images/profile00.jpg')",
+        'profile01': "url('/images/profile01.jpeg')",
+        'profile02': "url('/images/profile02.jpg')",
       }
     },
   },

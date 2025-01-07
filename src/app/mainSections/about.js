@@ -5,11 +5,11 @@ import ExperienceSection from '../components/experienceSection'
 import { TEXTS } from '../constants/texts';
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState('aboutme'); // 默认选中的标签
+  const [activeTab, setActiveTab] = useState('aboutme'); 
 
   const handleNavbarBtnClick = (e, targetId) => {
-    e.preventDefault(); // 阻止默认行为
-    setActiveTab(targetId); // 设置当前活动标签
+    e.preventDefault(); 
+    setActiveTab(targetId); 
   };
 
   const dataScienceSkills = [

@@ -386,7 +386,7 @@ p {
 }
 
 .tab-content, .skill-content {
-  display: none; /* 默认隐藏所有内容 */
+  display: none;
 }
 
 .tab-content.active {
@@ -411,7 +411,7 @@ p {
 .tab, .tab-clicked {
   padding: 10px; /* 增加内边距 */
   border-radius: 5px; /* 可选：添加圆角 */
-  transition: background-color 0.3s; /* 添加过渡效果 */
+  transition: background-color 0.5s; /* 添加过渡效果 */
   text-transform: uppercase;
 }
 
@@ -420,19 +420,24 @@ p {
 }
 
 .portfolio-container {
+  display: none; 
+}
+
+.portfolio-container.active {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 32px;
   flex-wrap: wrap; /* 確保可以換行 */
   width: 100%; /* 父容器使用全部可用空間 */
   box-sizing: border-box;
+  margin-top: 2rem;
 }
 
 .portfolio-item {
   position: relative;
   display: flex;
-  flex: 0 0 calc(50% - 8px); /* 每個項目佔 50%，扣除 gap 的一半 */
-  max-width: calc(50% - 8px); /* 確保最大寬度也相同 */
+  flex: 0 0 calc(50% - 16px); /* 每個項目佔 50%，扣除 gap 的一半 */
+  max-width: calc(50% - 16px); /* 確保最大寬度也相同 */
   box-sizing: border-box; /* 包含內邊距和邊框 */
 }
 
@@ -491,7 +496,7 @@ p {
   font-family: 'Arial', sans-serif; /* Fallback to sans-serif if Arial is not available */
 }
 
-.parallax-section {
+.transition-banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -503,3 +508,20 @@ p {
   overflow: hidden; /* 防止溢出父容器 */
   height: 30vh;
 }
+
+.portfolio-category-title-container {
+  display: flex; /* 使用 inline-flex */
+  gap: 2rem; /* 标签之间的间距 */
+  padding-left: 0;
+}
+
+.portfolio-category-title {
+  color: lightgray;
+}
+
+.portfolio-category-title-clicked {
+  color: var(--secondary); /* 活动状态的文字颜色 */
+  font-weight: bold;
+  transition: color 0.8s; /* 添加过渡效果 */
+}
+

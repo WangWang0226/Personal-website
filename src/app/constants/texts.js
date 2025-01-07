@@ -38,5 +38,5 @@ export const TEXTS = {
     MOTTO: "“Anything worth doing is difficult.”",
     SERVICES: "Services",
     PORTFOLIO: "Portfolio",
-    MY_RECENT_WORK: "My Recent Work"
+    MY_RECENT_WORK: "Demo of My Recent Work"
 };

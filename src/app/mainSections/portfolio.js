@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import PortfolioItem from '../components/PortfolioItem';
+import PortfolioItem from '../components/portfolioItem.js';
 import { TEXTS } from '../constants/texts';
 
 export default function Portfolio() {

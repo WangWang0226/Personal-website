@@ -40,12 +40,19 @@ export default function Portfolio() {
             onClick={(e) => handleNavbarBtnClick(e, 'mlRepo')}
             className={activeTab === 'mlRepo' ? 'portfolio-category-title-clicked' : 'portfolio-category-title'}
           >
-            Machine Learning Projects
+            AI/ML Projects
           </a>
         </li>
       </ul>
 
       <div className={`portfolio-container ${activeTab === 'blockchainRepo' ? 'active' : ''}`}>
+        <PortfolioItem
+          bgUrl="/images/dual_investment.jpeg"
+          title={TEXTS.DUAL_INVESTMENT}
+          content={TEXTS.FULL_STACK_PROJECT}
+          repoUrl={TEXTS.DUAL_INVESTMENT_REPO_URL}
+        />
+
         <PortfolioItem
           bgUrl="/images/share_prawn.jpg"
           title={TEXTS.SHARE_PRAWN}

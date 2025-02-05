@@ -40,7 +40,7 @@ export default function Navbar() {
       behavior: 'smooth'
     });
 
-    setActiveItem(targetId); // 更新当前选中的项
+
   };
 
   return (
@@ -48,16 +48,15 @@ export default function Navbar() {
       <div className="navbarContainer">
         <ul className="nav-links flex justify-around relative">
           {['home', 'about', 'portfolio', 'services'].map((item) => (
-            <li key={item} className={`navbarItem relative ${activeItem === item && item != "home" ? 'bg-blue-400' : ''}`}>
+            <li onClick={(e) => handleNavbarBtnClick(e, item)} key={item} className={`relative navbarItem ${activeItem === item && item != "home" ? 'active' : ''}`}>
               <a
                 href={`#${item}`}
-                onClick={(e) => handleNavbarBtnClick(e, item)}
                 className="text-white font-bold"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>
               {activeItem === item && item != "home" && (
-                <div className="absolute -bottom-1  w-4 h-2 bg-blue-400 rounded-b-full"></div>
+                <div className="navbarItem-decoration"></div>
               )}
             </li>
           ))}

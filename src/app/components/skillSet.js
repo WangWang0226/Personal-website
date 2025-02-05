@@ -8,7 +8,7 @@ const SkillSet = ({ category, skillData }) => {
                     {skillData.map((skill) => (
                         <div className="mb-2">
                             <h1 className="text-l text-gray-500 mb-1">{skill.name}</h1>
-                            <div className="h-2 rounded-full" style={{ width: `${skill.level}%`, backgroundColor: `var(--${skill.color})`}}></div>
+                            <div className="h-2 rounded-full" style={{ width: `${skill.level}%`, backgroundColor: `var(--lightBlue)`}}></div>
                         </div>
                     ))}
                 </div>

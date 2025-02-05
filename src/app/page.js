@@ -17,9 +17,8 @@ export default function Page() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       AOS.init({
-        duration: 1000, // 動畫持續時間
+        duration: 1000, 
         delay: 100,
-        // once: true, // 是否只觸發一次
       });
     }
   }, []);

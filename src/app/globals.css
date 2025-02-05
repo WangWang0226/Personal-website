@@ -7,6 +7,7 @@
   --foreground: #171717;
   --primary: #fbbf24;
   --secondary: #3965a2;
+  --deepBlue: #467ece;
   --lightBlue: #629ae9;
   --lightOrange: #e6a754;
   --lightGreen: #59e069;
@@ -354,7 +355,6 @@ p {
 .nav-links a {
   color: white; /* 链接颜色 */
   text-decoration: none;
-  
 }
 
 .navbarContainer {
@@ -362,7 +362,7 @@ p {
   justify-content: flex-end; /* 将子元素推到右侧 */
   margin-right: 10rem;
   flex: 1;  
-  min-height: 72px; 
+  min-height: 64px; 
 }
 
 .navbarItem {
@@ -371,6 +371,26 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbarItem:hover {
+  background-color: var(--deepBlue);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.navbarItem.active {
+  background-color: var(--lightBlue);
+  transition: none; 
+}
+
+.navbarItem-decoration {
+  position: absolute; 
+  bottom: -0.25rem; 
+  width: 1rem; 
+  height: 1rem; 
+  background-color: var(--lightBlue); 
+  border-radius: 90%; 
 }
 
 .tabContainer {
@@ -401,8 +421,12 @@ p {
 .tab {
   background-color: lightgray; 
   color: black
-  
 }
+
+.tab:hover {
+  opacity: 70%;
+}
+
 .tab-clicked {
   background-color: #3965a2; 
   color: white; /* 活动状态的文字颜色 */
@@ -517,6 +541,11 @@ p {
 
 .portfolio-category-title {
   color: lightgray;
+}
+
+.portfolio-category-title:hover {
+  color: var(--lightBlue);
+  transition: 0.3s;
 }
 
 .portfolio-category-title-clicked {

@@ -398,6 +398,7 @@ p {
   gap: 1rem; /* 标签之间的间距 */
   padding: 0.5rem;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .tab-links a {
@@ -439,17 +440,10 @@ p {
   text-transform: uppercase;
 }
 
-.portfolio-style {
-  background-color: white;
-}
-
 .portfolio-container {
-  display: none; 
-}
-
-.portfolio-container.active {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 32px;
   flex-wrap: wrap; /* 確保可以換行 */
   width: 100%; /* 父容器使用全部可用空間 */
@@ -520,6 +514,17 @@ p {
   font-family: 'Arial', sans-serif; /* Fallback to sans-serif if Arial is not available */
 }
 
+@media (max-width: 768px) {
+  .portfolio-item {
+    flex: 0 0 100%; /* 手機裝置每行一個項目 */
+    max-width: 100%;
+  }
+  .tab, .tab-clicked {
+    flex: 0 0 100%; /* 手機裝置每行一個項目 */
+    max-width: 100%;
+  }
+}
+
 .transition-banner {
   display: flex;
   justify-content: center;
@@ -552,5 +557,40 @@ p {
   color: var(--secondary); /* 活动状态的文字颜色 */
   font-weight: bold;
   transition: color 0.8s; /* 添加过渡效果 */
+}
+
+.page-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 24px;
+  flex: 0;
+}
+
+.about-container {
+  display: flex;
+  flex: 1; /* 讓它填滿 #about 剩餘的高度 */
+  flex-grow: 1;
+  flex-direction: row;
+  padding-top: 32px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.about-photo-container {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+}
+
+.about-sub-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
 }
 

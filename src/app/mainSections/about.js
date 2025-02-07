@@ -35,8 +35,8 @@ export default function About() {
   ]
 
   const backendSkills = [
-    { name: 'Express.js', level: 60 },
     { name: 'Node.js', level: 70 },
+    { name: 'Express.js', level: 60 },
     { name: 'MongoDB', level: 25 },
   ]
 
@@ -47,62 +47,64 @@ export default function About() {
   ]
 
   return (
-    <div id="about" className="flex flex-row max-w-6xl h-screen mx-auto">
-      <div className="justify-center flex flex-1 pt-24" data-aos="fade-up">
-        <div className="bg-profile01 rounded-3xl w-3/4 bg-center bg-cover" />
-      </div>
+    <div id="about" className="flex flex-col p-16 max-w-6xl h-screen mx-auto">
+      <h1 className='page-heading' data-aos="fade-in">{TEXTS.ABOUT_ME}</h1>
+      <div className='about-container flex flex-1 flex-row'>
+        <div className="about-photo-container" data-aos="fade-up">
+          <div className="bg-profile01 rounded-3xl w-3/4 bg-center bg-cover" />
+        </div>
 
-      <div className="flex flex-col flex-1 p-8 pt-32" data-aos="fade-left">
-        <ul className="tabContainer">
-          <li>
-            <a
-              href="#aboutme"
-              onClick={(e) => handleNavbarBtnClick(e, 'aboutme')}
-              className={activeTab === 'aboutme' ? 'tab-clicked' : 'tab'}
-            >{TEXTS.ABOUT_ME}
-            </a>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              onClick={(e) => handleNavbarBtnClick(e, 'skills')}
-              className={activeTab === 'skills' ? 'tab-clicked' : 'tab'}
-            >
-              {TEXTS.SKILLS}
-            </a>
-          </li>
-          <li>
-            <a
-              href="#experience"
-              onClick={(e) => handleNavbarBtnClick(e, 'experience')}
-              className={activeTab === 'experience' ? 'tab-clicked' : 'tab'}
-            >
-              {TEXTS.EXPERIENCE}
-            </a>
-          </li>
-        </ul>
+        <div className="about-sub-container" data-aos="fade-left">
+          <ul className="tabContainer">
+            <li>
+              <a
+                href="#aboutme"
+                onClick={(e) => handleNavbarBtnClick(e, 'aboutme')}
+                className={activeTab === 'aboutme' ? 'tab-clicked' : 'tab'}
+              >{TEXTS.ABOUT_ME}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                onClick={(e) => handleNavbarBtnClick(e, 'skills')}
+                className={activeTab === 'skills' ? 'tab-clicked' : 'tab'}
+              >
+                {TEXTS.SKILLS}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experience"
+                onClick={(e) => handleNavbarBtnClick(e, 'experience')}
+                className={activeTab === 'experience' ? 'tab-clicked' : 'tab'}
+              >
+                {TEXTS.EXPERIENCE}
+              </a>
+            </li>
+          </ul>
 
-        <div className="mt-8">
-          <div id="aboutme" className={`tab-content ${activeTab === 'aboutme' ? 'active' : ''}`}>
-            <h1 className='text-3xl font-bold text-black'>{TEXTS.MY_STORY}</h1>
-            <p className='text-gray-500'>{TEXTS.MY_STORY_CONTENT}</p>
-          </div>
-
-
-          <div id="skills" className={`skill-content ${activeTab === 'skills' ? 'active' : ''}`}>
-            <SkillSet category="Blockchain Development" skillData={blockchainSkills}></SkillSet>
-            <SkillSet category="Data Science" skillData={dataScienceSkills}></SkillSet>
-            <SkillSet category="FrontEnd" skillData={frontendSkills}></SkillSet>
-            <SkillSet category="Backend" skillData={backendSkills}></SkillSet>
-          </div>
+          <div className="mt-8">
+            <div id="aboutme" className={`tab-content ${activeTab === 'aboutme' ? 'active' : ''}`}>
+              <h1 className='text-3xl font-bold text-black'>{TEXTS.MY_STORY}</h1>
+              <p className='text-gray-500'>{TEXTS.MY_STORY_CONTENT}</p>
+            </div>
 
 
-          <div id="experience" className={`tab-content ${activeTab === 'experience' ? 'active' : ''}`}>
-            <ExperienceSection experiences={experiences}></ExperienceSection>
+            <div id="skills" className={`skill-content ${activeTab === 'skills' ? 'active' : ''}`}>
+              <SkillSet category="Blockchain Development" skillData={blockchainSkills}></SkillSet>
+              <SkillSet category="Data Science" skillData={dataScienceSkills}></SkillSet>
+              <SkillSet category="FrontEnd" skillData={frontendSkills}></SkillSet>
+              <SkillSet category="Backend" skillData={backendSkills}></SkillSet>
+            </div>
+
+
+            <div id="experience" className={`tab-content ${activeTab === 'experience' ? 'active' : ''}`}>
+              <ExperienceSection experiences={experiences}></ExperienceSection>
+            </div>
           </div>
         </div>
       </div>
-
 
     </div>
   );

@@ -28,6 +28,7 @@ export const TEXTS = {
     EXPERIENCE: "Experience",
     MY_STORY: "My Story",
     MY_STORY_CONTENT: "I'm a Software Engineer with over 3 years of experience and a deep passion for blockchain, AI, and Machine Learning. I'm currently pursuing a graduate certificate in AI & ML at Conestoga College, where I focus on Data Analysis, Data Engineering, and advanced ML algorithms.",
+    MY_STORY_CONTENT_2: "I have a strong passion for building impactful and meaningful applications. I find great fulfillment in creating tools that are both useful and innovative, as they allow me to grow through the sense of achievement and continuous progress. I enjoy learning new skills that enhance my capabilities, enabling me to apply comprehensive, cross-disciplinary knowledge to develop even better solutions.",
     BLOCKCHAIN_ENGINEER: "Blockchain Smart Contract Engineer",
     ANDROID_ENGINEER: "Android Engineer",
     PELITH_JOB_DESC: "Successfully developed and deployed decentralized applications (DEX, ICO, Airdrop, Dual-Investment, Arbitrage) on EVM-compatible L2 chains, driving key project functionalities and scalability.",

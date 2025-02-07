@@ -87,7 +87,7 @@ export default function About() {
           <div className="mt-8">
             <div id="aboutme" className={`tab-content ${activeTab === 'aboutme' ? 'active' : ''}`}>
               <h1 className='text-2xl font-bold text-black'>{TEXTS.MY_STORY}</h1>
-              <p className='text-gray-500 pt-4'>{TEXTS.MY_STORY_CONTENT}</p>
+              <p className='text-gray-500 pt-4'>{TEXTS.MY_STORY_CONTENT} <br/> <br/> {TEXTS.MY_STORY_CONTENT_2}</p>
             </div>
 
 

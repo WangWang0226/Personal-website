@@ -85,7 +85,7 @@ export default function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="flex flex-col items-center max-w-4xl mx-auto p-16 min-h-screen"
+      className="portfolio-container"
     >
       <h1 className="page-heading" data-aos="fade-in">
         {TEXTS.PORTFOLIO}
@@ -93,7 +93,7 @@ export default function Portfolio() {
 
       <PortfolioCategories activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <div className="portfolio-container">
+      <div className="portfolio-sub-container">
         {activeProjects.length > 0 ? (
           activeProjects.map(({ bgUrl, title, content, repoUrl }) => (
             <PortfolioItem

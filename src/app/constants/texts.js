@@ -1,5 +1,5 @@
 export const TEXTS = {
-    // Urls:
+    /** Urls */
     LINKEDIN_LINK: "https://www.linkedin.com/in/lichengwang/",
     GITHUB_LINK: "https://github.com/WangWang0226",
     MEDIUM_LINK: "https://medium.com/@eeha8834",
@@ -8,18 +8,26 @@ export const TEXTS = {
     HACK_VULNERABLE_DEFI_REPO_URL: "https://github.com/WangWang0226/Hack-Vulnerable-DeFi-Practice",
     SHARE_PRAWN_REPO_URL: "https://github.com/WangWang0226/Share-Prawn",
     SQRT_LIQUIDITY_ICO_REPO_URL: "https://github.com/WangWang0226/SqrtLiquidityICO",
-    TOKEN_AIRDROP_REPO_URL: "https://github.com/WangWang0226/merkle_pf_airdrop/tree/master", 
+    TOKEN_AIRDROP_REPO_URL: "https://github.com/WangWang0226/merkle_pf_airdrop/tree/master",
 
+    /** Main Section Titles */
+    ABOUT_ME_TITLE: "- About Me -",
+    SERVICES: "- Services -",
+    PORTFOLIO: "- Portfolio -",
+
+    /** Home Page */
     TITLE: "I'm Licheng Wang",
     BIO_1: "A Software Engineer",
     BIO_2: "focusing on Blockchain & Data Science",
-    ABOUT_ME: "About Me",
+    TALK_TO_AI: "Chat with my AI agent (Coming Soon)",
+    VIEW_RESUME: "View Resume",
+
+    /** About Me Page */
+    ABOUT_ME_TAB: "About Me",
     SKILLS: "Skills",
     EXPERIENCE: "Experience",
     MY_STORY: "My Story",
     MY_STORY_CONTENT: "I'm a Software Engineer with over 3 years of experience and a deep passion for blockchain, AI, and Machine Learning. I'm currently pursuing a graduate certificate in AI & ML at Conestoga College, where I focus on Data Analysis, Data Engineering, and advanced ML algorithms.",
-    TALK_TO_AI: "Chat with my AI agent (Coming Soon)",
-    VIEW_RESUME: "View my Resume",
     BLOCKCHAIN_ENGINEER: "Blockchain Smart Contract Engineer",
     ANDROID_ENGINEER: "Android Engineer",
     PELITH_JOB_DESC: "Successfully developed and deployed decentralized applications (DEX, ICO, Airdrop, Dual-Investment, Arbitrage) on EVM-compatible L2 chains, driving key project functionalities and scalability.",
@@ -31,17 +39,31 @@ export const TEXTS = {
     PELITH_TW: "Pelith, Taiwan",
     KKCOMPANY_TW: "KKCompany, Taiwan",
     GOODIDEA_TW: "GoodIdea Studio, Taiwan",
+    
+    /** Portfolio Page */
     BTC_SENTIMENT_ANALYSIS: "Reddit: BTC Sentiment Analysis",
-    DATA_ANALYSIS: "#Data Analysis",
+    DATA_ANALYSIS: "- Data Analysis -",
     DUAL_INVESTMENT: "Dual Investment: A Classic Financial Product in Web3",
-    FULL_STACK_PROJECT: "#Full Stack Project",
+    FULL_STACK_PROJECT: "- Full Stack Project -",
     SHARE_PRAWN: "Share Prawn: A Profit-Sharing ERC20 Token",
-    BLOCKCHAIN_SMART_CONTRACT: "#Blockchain Smart Contract",
+    BLOCKCHAIN_SMART_CONTRACT: "- Blockchain Smart Contract -",
     HACK_VULNERABLE_DEFI: "Damn Vulnerable DeFi Practice",
-    BLOCKCHAIN_SECURITY: "#Blockchain Security",
+    BLOCKCHAIN_SECURITY: "- Blockchain Security -",
     SQRT_LIQUIDITY_ICO: "SQRT Liquidity ICO",
     TOKEN_AIRDROP: "ERC20 Token Airdrop",
+    
+    /** Banner */
     MOTTO: "“Anything worth doing is difficult.”",
-    SERVICES: "Services",
-    PORTFOLIO: "Portfolio",
+    
+
+    /** Services Texts */
+    TITLE_1: "Android App Dev",
+    CONTENT_1: "Custom Android apps built with Kotlin, focusing on performance, user experience, and scalability.",
+
+    TITLE_2: "Web Dev",
+    CONTENT_2: "Modern web applications using React, Next.js, and Node.js for seamless and responsive user experiences.",
+
+    TITLE_3: "Blockchain DApp Dev",
+    CONTENT_3: "Blockchain solutions with secure smart contracts, dApps, and DeFi platforms using Solidity and EVM compatible chains."
+
 };

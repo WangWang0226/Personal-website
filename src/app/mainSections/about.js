@@ -47,21 +47,21 @@ export default function About() {
   ]
 
   return (
-    <div id="about" className="flex flex-col p-16 max-w-6xl h-screen mx-auto">
-      <h1 className='page-heading' data-aos="fade-in">{TEXTS.ABOUT_ME}</h1>
-      <div className='about-container flex flex-1 flex-row'>
-        <div className="about-photo-container" data-aos="fade-up">
+    <div id="about" className="about-container">
+      <h1 className='page-heading' data-aos="fade-in">{TEXTS.ABOUT_ME_TITLE}</h1>
+      <div className='about-sub-container flex flex-1 flex-row'>
+        <div className="about-sub-left-container" data-aos="fade-up">
           <div className="bg-profile01 rounded-3xl w-3/4 bg-center bg-cover" />
         </div>
 
-        <div className="about-sub-container" data-aos="fade-left">
+        <div className="about-sub-right-container" data-aos="fade-left">
           <ul className="tabContainer">
             <li>
               <a
                 href="#aboutme"
                 onClick={(e) => handleNavbarBtnClick(e, 'aboutme')}
                 className={activeTab === 'aboutme' ? 'tab-clicked' : 'tab'}
-              >{TEXTS.ABOUT_ME}
+              >{TEXTS.ABOUT_ME_TAB}
               </a>
             </li>
             <li>
@@ -86,8 +86,8 @@ export default function About() {
 
           <div className="mt-8">
             <div id="aboutme" className={`tab-content ${activeTab === 'aboutme' ? 'active' : ''}`}>
-              <h1 className='text-3xl font-bold text-black'>{TEXTS.MY_STORY}</h1>
-              <p className='text-gray-500'>{TEXTS.MY_STORY_CONTENT}</p>
+              <h1 className='text-2xl font-bold text-black'>{TEXTS.MY_STORY}</h1>
+              <p className='text-gray-500 pt-4'>{TEXTS.MY_STORY_CONTENT}</p>
             </div>
 
 

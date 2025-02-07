@@ -9,7 +9,7 @@ const ExperienceSection = ({ experiences }) => {
                     {experiences.map((exp) => (
                         <div className="mb-6">
                             <h1 className='text-xl font-bold text-black'>{exp.title}</h1>
-                            <p class="text-secondary text-sm font-bold mt-2">
+                            <p class="text-secondary text-sm font-bold mt-2" style={{ fontStyle: 'italic' }}>
                                 {exp.time} 
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 ml-2"/> 
                                 {exp.company}

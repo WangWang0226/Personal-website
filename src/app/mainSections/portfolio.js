@@ -56,7 +56,7 @@ const PortfolioCategories = ({ activeTab, setActiveTab }) => {
   ];
 
   return (
-    <ul className="pt-8 flex gap-4" data-aos="fade-up">
+    <ul className="pt-8 flex gap-8" data-aos="fade-up">
       {categories.map(({ id, label }) => (
         <li className="cursor-pointer">
           <a

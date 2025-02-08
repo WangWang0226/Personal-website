@@ -32,7 +32,7 @@ export default function Services() {
 
     <div id="services" className="services-container">
       <h1 className='page-heading' data-aos="fade-in">{TEXTS.SERVICES}</h1>
-      <div className='service-sub-container'>
+      <div className='service-sub-container' data-aos="fade-up">
         {servicesData.map(({ title, content }) => (
           <ServiceItem title={title} content={content} />
         ))

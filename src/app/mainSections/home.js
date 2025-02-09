@@ -3,11 +3,12 @@ import { FaLinkedin, FaMediumM, FaGithub } from 'react-icons/fa';
 import LinkButton from '../components/linkButton';
 import { TEXTS } from '../constants/texts';
 
+const RESUME_LINK = process.env.NEXT_PUBLIC_RESUME_LINK
 
 export default function Home() {
 
   const handleResumeClick = () => {
-    window.open('/doc/resume.pdf', '_blank'); 
+    window.open(RESUME_LINK, '_blank'); 
   };
 
   return (

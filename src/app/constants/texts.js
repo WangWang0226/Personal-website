@@ -10,6 +10,9 @@ export const TEXTS = {
     SQRT_LIQUIDITY_ICO_REPO_URL: "https://github.com/WangWang0226/SqrtLiquidityICO",
     TOKEN_AIRDROP_REPO_URL: "https://github.com/WangWang0226/merkle_pf_airdrop/tree/master",
 
+    /** Navigation Bar */
+    MENU: "Menu ☰",
+    
     /** Main Section Titles */
     ABOUT_ME_TITLE: "- About Me -",
     SERVICES: "- Services -",
@@ -65,6 +68,6 @@ export const TEXTS = {
     CONTENT_2: "Modern web applications using React, Next.js, and Node.js for seamless and responsive user experiences.",
 
     TITLE_3: "Blockchain DApp Dev",
-    CONTENT_3: "Blockchain solutions with secure smart contracts, dApps, and DeFi platforms using Solidity and EVM compatible chains."
+    CONTENT_3: "Secure Smart contracts development, testing and deployment with Solidity and EVM compatible chains."
 
 };

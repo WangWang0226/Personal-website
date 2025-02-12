@@ -49,9 +49,9 @@ export default function About() {
   return (
     <div id="about" className="about-container">
       <h1 className='page-heading' data-aos="fade-in">{TEXTS.ABOUT_ME_TITLE}</h1>
-      <div className='about-sub-container flex flex-1 flex-row'>
+      <div className='about-sub-container'>
         <div className="about-sub-left-container" data-aos="fade-up">
-          <div className="bg-profile01 rounded-3xl w-3/4 bg-center bg-cover" />
+          <div className="bg-profile01 rounded-3xl w-full bg-center bg-cover" />
         </div>
 
         <div className="about-sub-right-container" data-aos="fade-left">

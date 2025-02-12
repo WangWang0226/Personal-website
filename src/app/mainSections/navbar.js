@@ -1,23 +1,23 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { TEXTS } from '../constants/texts';
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("home");
+  const [isOpen, setIsOpen] = useState(false); // 新增狀態控制選單
   const windowOffset = 64;
-  // Define section IDs
   const SECTION_IDS = ["home", "about", "portfolio", "services"];
 
   useEffect(() => {
-    // Function to calculate section positions
     const calculateSectionPositions = () => {
-
       return SECTION_IDS.map((id) => {
         const element = document.getElementById(id);
-        if (!element) return null; // Handle cases where the element is not found
+        if (!element) return null;
         const { top } = element.getBoundingClientRect();
-        return { id, top: top + window.scrollY - windowOffset }; // Add scroll offset
+        return { id, top: top + window.scrollY - windowOffset };
       });
     };
 
@@ -25,7 +25,6 @@ export default function Navbar() {
       const scrollPosition = window.scrollY;
       setScrolled(scrollPosition > 100);
 
-      // Dynamically determine the active section
       const sectionPositions = calculateSectionPositions();
       const currentSection = sectionPositions.find(
         (section, index) =>
@@ -46,21 +45,43 @@ export default function Navbar() {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const { top } = targetElement.getBoundingClientRect(); // distance from element to the top of window 
+      const { top } = targetElement.getBoundingClientRect();
       const offsetPosition = top + window.scrollY - windowOffset;
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth", // 平滑滾動
+        behavior: "smooth",
       });
     }
+    setIsOpen(false); // 點擊後關閉選單
   };
-
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbarContainer">
-        <ul className="nav-links flex justify-around relative">
+        {/* mobile menu button */}
+        <button
+          className="hamburger-menu"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {TEXTS.MENU}
+        </button>
+
+        {/* mobile menu */}
+        <ul className={`mobile-menu ${isOpen ? "menu-open" : ""}`}>
+          {SECTION_IDS.map((item) => (
+            <li
+              key={item}
+              onClick={(e) => handleNavbarBtnClick(e, item)}
+              className={`menu-item ${activeItem === item ? "active" : ""}`}
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </li>
+          ))}
+        </ul>
+
+        {/* desktop menu */}
+        <ul className="nav-links">
           {SECTION_IDS.map((item) => (
             <li
               key={item}

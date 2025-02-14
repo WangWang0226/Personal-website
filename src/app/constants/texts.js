@@ -1,8 +1,5 @@
 export const TEXTS = {
     /** Urls */
-    LINKEDIN_LINK: "https://www.linkedin.com/in/lichengwang/",
-    GITHUB_LINK: "https://github.com/WangWang0226",
-    MEDIUM_LINK: "https://medium.com/@eeha8834",
     BTC_SENTIMENT_ANALYSIS_REPO_URL: "https://medium.com/@eeha8834/analyzing-bitcoin-sentiment-on-reddit-insights-from-user-discussions-13de70192f7b",
     DUAL_INVESTMENT_REPO_URL: "https://dual-investment-git-master-leon-wangs-projects.vercel.app/",
     HACK_VULNERABLE_DEFI_REPO_URL: "https://github.com/WangWang0226/Hack-Vulnerable-DeFi-Practice",
@@ -12,7 +9,7 @@ export const TEXTS = {
 
     /** Navigation Bar */
     MENU: "Menu ☰",
-    
+
     /** Main Section Titles */
     ABOUT_ME_TITLE: "- About Me -",
     SERVICES: "- Services -",

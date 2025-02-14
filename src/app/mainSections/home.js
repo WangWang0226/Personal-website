@@ -4,6 +4,9 @@ import LinkButton from '../components/linkButton';
 import { TEXTS } from '../constants/texts';
 
 const RESUME_LINK = process.env.NEXT_PUBLIC_RESUME_LINK
+const GITHUB = process.env.NEXT_PUBLIC_GITHUB_LINK
+const LINKEDIN = process.env.NEXT_PUBLIC_LINKEDIN_LINK
+const MEDIUM = process.env.NEXT_PUBLIC_MEDIUM_LINK
 
 export default function Home() {
 
@@ -17,17 +20,17 @@ export default function Home() {
       <div className="home-text-container">
         <div className="flex flex-row mb-2 ">
           <LinkButton
-            href={TEXTS.LINKEDIN_LINK}
+            href={LINKEDIN}
             icon={<FaLinkedin className="mr-2" />}
             text="LinkedIn"
           />
           <LinkButton
-            href={TEXTS.GITHUB_LINK}
+            href={GITHUB}
             icon={<FaGithub className="mr-2" />}
             text="Github"
           />
           <LinkButton
-            href={TEXTS.GITHUB_LINK}
+            href={MEDIUM}
             icon={<FaMediumM className="mr-2" />}
             text="Medium"
           />

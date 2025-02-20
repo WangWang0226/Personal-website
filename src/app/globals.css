@@ -235,7 +235,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 56rem;
+  max-width: 64rem;
   margin: auto auto;
   padding: 32px;
   min-height: 100vh;
@@ -247,14 +247,10 @@ body {
   justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
-  /* 確保可以換行 */
   width: 100%;
-  /* 父容器使用全部可用空間 */
   box-sizing: border-box;
   margin-top: 48px;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
-  /* 陰影應用在外層 */
-
 }
 
 .portfolio-item {
@@ -274,15 +270,10 @@ body {
 
 .portfolio-img {
   position: relative;
-  /* 使容器能夠使用絕對定位 */
   width: 100%;
-  /* 寬度為 100% */
-  padding-top: 80%;
-  /* 這樣可以保持 1:1 的比例 */
+  padding-top: 60%;
   background-size: cover;
-  /* 確保背景圖片覆蓋整個容器 */
   background-position: center;
-  /* 背景圖片居中 */
 }
 
 .portfolio-overlay {

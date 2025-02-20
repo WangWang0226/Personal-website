@@ -6,6 +6,8 @@ export const TEXTS = {
     SHARE_PRAWN_REPO_URL: "https://github.com/WangWang0226/Share-Prawn",
     SQRT_LIQUIDITY_ICO_REPO_URL: "https://github.com/WangWang0226/SqrtLiquidityICO",
     TOKEN_AIRDROP_REPO_URL: "https://github.com/WangWang0226/merkle_pf_airdrop/tree/master",
+    COFFEE_MAKER_REPO_URL: "https://github.com/WangWang0226/coffee-maker",
+    TALENT_MATCH_REPO_URL: "https://github.com/WangWang0226/Talent-Match",
 
     /** Navigation Bar */
     MENU: "Menu ☰",
@@ -42,16 +44,22 @@ export const TEXTS = {
     GOODIDEA_TW: "GoodIdea Studio, Taiwan",
     
     /** Portfolio Page */
-    BTC_SENTIMENT_ANALYSIS: "Reddit: BTC Sentiment Analysis",
-    DATA_ANALYSIS: "- Data Analysis -",
+    BTC_SENTIMENT_ANALYSIS: "BTC Sentiment Analysis on Reddit",
+    BTC_SENTIMENT_ANALYSIS_SKILLS: "- Python / SQL / Data ETL -",
     DUAL_INVESTMENT: "Dual Investment: A Classic Financial Product in Web3",
-    FULL_STACK_PROJECT: "- Full Stack Project -",
+    DUAL_INVESTMENT_SKILLS: "- Solidity / Foundry / Next.js / Wagmi / Viem -",
     SHARE_PRAWN: "Share Prawn: A Profit-Sharing ERC20 Token",
-    BLOCKCHAIN_SMART_CONTRACT: "- Blockchain Smart Contract -",
+    SHARE_PRAWN_SKILLS: "- Solidity / Foundry -",
     HACK_VULNERABLE_DEFI: "Damn Vulnerable DeFi Practice",
-    BLOCKCHAIN_SECURITY: "- Blockchain Security -",
+    HACK_VULNERABLE_DEFI_SKILLS: "- Solidity / Blockchain Security -",
     SQRT_LIQUIDITY_ICO: "SQRT Liquidity ICO",
+    SQRT_LIQUIDITY_ICO_SKILLS: "- Solidity / Foundry -",
     TOKEN_AIRDROP: "ERC20 Token Airdrop",
+    TOKEN_AIRDROP_SKILLS: "- Solidity / Foundry / MerkleTree -",
+    TALENT_MATCH: "Talent Match: An AI Tool for Resume Matching",
+    COFFEE_MAKER: "Coffee Maker: An AI Agent for Coffee Chat Preparation",
+    TALENT_MATCH_SKILLS: "- LangChain / LLM / RAG -",
+    COFFEE_MAKER_SKILLS: "- LangChain / LLM / ReAct Agent -",
     
     /** Banner */
     MOTTO: "“Anything worth doing is difficult.”",

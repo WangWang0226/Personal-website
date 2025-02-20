@@ -8,7 +8,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("home");
   const [isOpen, setIsOpen] = useState(false); // 新增狀態控制選單
-  const windowOffset = 64;
+  const windowOffset = 48;
   const SECTION_IDS = ["home", "about", "portfolio", "services"];
 
   useEffect(() => {

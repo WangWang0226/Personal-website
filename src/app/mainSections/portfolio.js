@@ -7,33 +7,33 @@ import classNames from "classnames";
 const portfolioData = {
   blockchainRepo: [
     {
-      bgUrl: "/images/dual_investment.jpeg",
+      bgUrl: "/images/demo-dual-invest.gif",
       title: TEXTS.DUAL_INVESTMENT,
-      content: TEXTS.FULL_STACK_PROJECT,
+      content: TEXTS.DUAL_INVESTMENT_SKILLS,
       repoUrl: TEXTS.DUAL_INVESTMENT_REPO_URL,
     },
     {
       bgUrl: "/images/share_prawn.jpg",
       title: TEXTS.SHARE_PRAWN,
-      content: TEXTS.BLOCKCHAIN_SMART_CONTRACT,
+      content: TEXTS.SHARE_PRAWN_SKILLS,
       repoUrl: TEXTS.SHARE_PRAWN_REPO_URL,
     },
     {
       bgUrl: "/images/airdrop.jpeg",
       title: TEXTS.TOKEN_AIRDROP,
-      content: TEXTS.BLOCKCHAIN_SMART_CONTRACT,
+      content: TEXTS.TOKEN_AIRDROP_SKILLS,
       repoUrl: TEXTS.TOKEN_AIRDROP_REPO_URL,
     },
     {
       bgUrl: "/images/sqrtLiquidityICO.jpeg",
       title: TEXTS.SQRT_LIQUIDITY_ICO,
-      content: TEXTS.BLOCKCHAIN_SMART_CONTRACT,
+      content: TEXTS.SQRT_LIQUIDITY_ICO_SKILLS,
       repoUrl: TEXTS.SQRT_LIQUIDITY_ICO_REPO_URL,
     },
     {
       bgUrl: "/images/DamnVulnerableDeFi.jpeg",
       title: TEXTS.HACK_VULNERABLE_DEFI,
-      content: TEXTS.BLOCKCHAIN_SECURITY,
+      content: TEXTS.HACK_VULNERABLE_DEFI_SKILLS,
       repoUrl: TEXTS.HACK_VULNERABLE_DEFI_REPO_URL,
     },
   ],
@@ -41,18 +41,31 @@ const portfolioData = {
     {
       bgUrl: "/images/reddit_sentiment_analysis.jpg",
       title: TEXTS.BTC_SENTIMENT_ANALYSIS,
-      content: TEXTS.DATA_ANALYSIS,
+      content: TEXTS.BTC_SENTIMENT_ANALYSIS_SKILLS,
       repoUrl: TEXTS.BTC_SENTIMENT_ANALYSIS_REPO_URL,
     },
   ],
-  mlRepo: [],
+  mlRepo: [
+    {
+      bgUrl: "/images/demo-talent-match.gif",
+      title: TEXTS.TALENT_MATCH,
+      content: TEXTS.TALENT_MATCH_SKILLS,
+      repoUrl: TEXTS.TALENT_MATCH_REPO_URL,
+    },
+    {
+      bgUrl: "/images/demo-coffeemaker.gif",
+      title: TEXTS.COFFEE_MAKER,
+      content: TEXTS.COFFEE_MAKER_SKILLS,
+      repoUrl: TEXTS.COFFEE_MAKER_REPO_URL,
+    },
+  ],
 };
 
 const PortfolioCategories = ({ activeTab, setActiveTab }) => {
   const categories = [
-    { id: "blockchainRepo", label: "Blockchain Projects" },
-    { id: "dataAnalysisRepo", label: "Data Analysis Projects" },
-    { id: "mlRepo", label: "AI/ML Projects" },
+    { id: "mlRepo", label: "AI/ML" },
+    { id: "blockchainRepo", label: "Blockchain" },
+    { id: "dataAnalysisRepo", label: "Data Analytics" },
   ];
 
   return (

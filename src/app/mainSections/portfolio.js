@@ -91,7 +91,7 @@ const PortfolioCategories = ({ activeTab, setActiveTab }) => {
 };
 
 export default function Portfolio() {
-  const [activeTab, setActiveTab] = useState("blockchainRepo");
+  const [activeTab, setActiveTab] = useState("mlRepo");
 
   const activeProjects = useMemo(() => portfolioData[activeTab], [activeTab]);
 

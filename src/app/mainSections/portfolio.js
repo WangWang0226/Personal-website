@@ -47,6 +47,12 @@ const portfolioData = {
   ],
   mlRepo: [
     {
+      bgUrl: "/images/demo-ai-twin.gif",
+      title: TEXTS.AI_TWIN,
+      content: TEXTS.AI_TWIN_SKILLS,
+      repoUrl: TEXTS.AI_TWIN_REPO_URL,
+    },
+    {
       bgUrl: "/images/demo-talent-match.gif",
       title: TEXTS.TALENT_MATCH,
       content: TEXTS.TALENT_MATCH_SKILLS,

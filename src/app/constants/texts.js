@@ -1,3 +1,5 @@
+const TALK_TO_AI = process.env.NEXT_PUBLIC_AI_TWIN_LINK
+
 export const TEXTS = {
     /** Urls */
     BTC_SENTIMENT_ANALYSIS_REPO_URL: "https://medium.com/@eeha8834/analyzing-bitcoin-sentiment-on-reddit-insights-from-user-discussions-13de70192f7b",
@@ -8,6 +10,7 @@ export const TEXTS = {
     TOKEN_AIRDROP_REPO_URL: "https://github.com/WangWang0226/merkle_pf_airdrop/tree/master",
     COFFEE_MAKER_REPO_URL: "https://github.com/WangWang0226/coffee-maker",
     TALENT_MATCH_REPO_URL: "https://github.com/WangWang0226/Talent-Match",
+    AI_TWIN_REPO_URL: TALK_TO_AI,
 
     /** Navigation Bar */
     MENU: "Menu ☰",
@@ -21,7 +24,7 @@ export const TEXTS = {
     TITLE: "I'm Licheng Wang",
     BIO_1: "A Software Engineer",
     BIO_2: "focusing on Blockchain & Data Science",
-    TALK_TO_AI: "Chat with my AI agent (Coming Soon)",
+    TALK_TO_AI: "Chat with My AI Chatbot",
     VIEW_RESUME: "View Resume",
 
     /** About Me Page */
@@ -60,9 +63,11 @@ export const TEXTS = {
     COFFEE_MAKER: "Coffee Maker: An AI Agent for Coffee Chat Preparation",
     TALENT_MATCH_SKILLS: "- LangChain / LLM / RAG -",
     COFFEE_MAKER_SKILLS: "- LangChain / LLM / ReAct Agent -",
+    AI_TWIN: "AI Twin: A Chatbot for Recruiters to Learn About Me",
+    AI_TWIN_SKILLS: "- LangChain / LLM / RAG / Streamlit -",
     
     /** Banner */
-    MOTTO: "“Anything worth doing is difficult.”",
+    MOTTO: "“Keep learning, keep trying, keep going.”",
     
 
     /** Services Texts */

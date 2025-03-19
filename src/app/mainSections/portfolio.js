@@ -47,6 +47,12 @@ const portfolioData = {
   ],
   mlRepo: [
     {
+      bgUrl: "/images/demo-butter-fi.gif",
+      title: TEXTS.BUTTER_FI,
+      content: TEXTS.BUTTER_FI_SKILLS,
+      repoUrl: TEXTS.BUTTER_FI_REPO_URL,
+    },
+    {
       bgUrl: "/images/demo-ai-twin.gif",
       title: TEXTS.AI_TWIN,
       content: TEXTS.AI_TWIN_SKILLS,

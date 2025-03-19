@@ -1,4 +1,5 @@
 const TALK_TO_AI = process.env.NEXT_PUBLIC_AI_TWIN_LINK
+const BUTTER_FI = process.env.NEXT_PUBLIC_BUTTER_FI_LINK
 
 export const TEXTS = {
     /** Urls */
@@ -11,6 +12,8 @@ export const TEXTS = {
     COFFEE_MAKER_REPO_URL: "https://github.com/WangWang0226/coffee-maker",
     TALENT_MATCH_REPO_URL: "https://github.com/WangWang0226/Talent-Match",
     AI_TWIN_REPO_URL: TALK_TO_AI,
+    BUTTER_FI_REPO_URL: BUTTER_FI,
+
 
     /** Navigation Bar */
     MENU: "Menu ☰",
@@ -50,7 +53,7 @@ export const TEXTS = {
     BTC_SENTIMENT_ANALYSIS: "BTC Sentiment Analysis on Reddit",
     BTC_SENTIMENT_ANALYSIS_SKILLS: "- Python / SQL / Data ETL -",
     DUAL_INVESTMENT: "Dual Investment: A Classic Financial Product in Web3",
-    DUAL_INVESTMENT_SKILLS: "- Solidity / Foundry / Next.js / Wagmi / Viem -",
+    DUAL_INVESTMENT_SKILLS: "- Solidity / Foundry / Next.js / JavaScript / TailwindCSS / Wagmi / Viem -",
     SHARE_PRAWN: "Share Prawn: A Profit-Sharing ERC20 Token",
     SHARE_PRAWN_SKILLS: "- Solidity / Foundry -",
     HACK_VULNERABLE_DEFI: "Damn Vulnerable DeFi Practice",
@@ -61,10 +64,12 @@ export const TEXTS = {
     TOKEN_AIRDROP_SKILLS: "- Solidity / Foundry / MerkleTree -",
     TALENT_MATCH: "Talent Match: An AI Tool for Resume Matching",
     COFFEE_MAKER: "Coffee Maker: An AI Agent for Coffee Chat Preparation",
-    TALENT_MATCH_SKILLS: "- LangChain / LLM / RAG -",
-    COFFEE_MAKER_SKILLS: "- LangChain / LLM / ReAct Agent -",
+    TALENT_MATCH_SKILLS: "- LangChain / LLM / RAG / Flask -",
+    COFFEE_MAKER_SKILLS: "- LangChain / LLM / ReAct Agent / Flask -",
     AI_TWIN: "AI Twin: A Chatbot for Recruiters to Learn About Me",
     AI_TWIN_SKILLS: "- LangChain / LLM / RAG / Streamlit -",
+    BUTTER_FI: "Butter Finance — An AI-Powered Chat-to-Stake & Recommendation protocol on the Monad blockchain",
+    BUTTER_FI_SKILLS: "- LangChain / LangGraph / RAG / ReAct Agent / Python / FastAPI / Solidity / Foundry / Next.js / TypeScript / TailwindCSS / Web3.py / Web3.js -",
     
     /** Banner */
     MOTTO: "“Keep learning, keep trying, keep going.”",
